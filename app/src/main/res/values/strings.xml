@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Liste</string>
-    <string name="text1">BIENVENUE</string>
-    <string name="nameapp">sur MIAOU</string>
+    <string name="title">Inscription</string>
+    <string name="email">email</string>
+    <string name="nom">Nom</string>
+    <string name="birth">Date de naissance</string>
+    <string name="phone">Numéro de téléphone</string>
+
+
 </resources>
