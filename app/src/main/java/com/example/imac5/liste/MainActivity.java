@@ -26,9 +26,15 @@ public class MainActivity extends AppCompatActivity {
         buttonSubscribe = (Button) findViewById(R.id.inscription);
         buttonSubscribe.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,InscriptionActivity.class));
+                startActivity(new Intent(MainActivity.this, InscriptionActivity.class));
             }
         });
 
+        buttonConnect = (Button) findViewById(R.id.connexion);
+        buttonConnect.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ConnexionActivity.class));
+            }
+        });
     }
 }

@@ -15,16 +15,20 @@
         <TextView
             android:layout_width="60dp"
             android:layout_height="30dp"
-            android:layout_marginVertical="305dp"
+            android:layout_marginVertical="195dp"
             android:text="@string/nom"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:layout_marginHorizontal="40dp"/>
         <EditText
+            android:id="@+id/name"
             android:layout_width="150dp"
             android:layout_height="30dp"
             android:background="@color/white"
-            android:layout_marginVertical="305dp"/>
+            android:layout_marginVertical="195dp"
+            android:layout_marginHorizontal="60dp"
+
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -35,7 +39,7 @@
             android:layout_width="60dp"
             android:layout_height="30dp"
             android:layout_marginHorizontal="40dp"
-            android:layout_marginVertical="250dp"
+            android:layout_marginVertical="240dp"
             android:text="@string/email"
             android:textColor="@color/white"
             android:textSize="18sp" />
@@ -44,7 +48,8 @@
             android:layout_width="150dp"
             android:layout_height="30dp"
             android:background="@color/white"
-            android:layout_marginVertical="255dp"/>
+            android:layout_marginVertical="240dp"
+            android:layout_marginHorizontal="60dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -52,18 +57,20 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:layout_width="150dp"
+            android:layout_width="50dp"
             android:layout_height="30dp"
             android:layout_marginHorizontal="40dp"
-            android:layout_marginVertical="350dp"
+            android:layout_marginVertical="283dp"
             android:text="@string/birth"
             android:textColor="@color/white"
             android:textSize="18sp" />
+
         <EditText
-            android:layout_width="120dp"
+            android:layout_width="150dp"
             android:layout_height="30dp"
-            android:background="@color/white"
-            android:layout_marginVertical="352dp"/>
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginVertical="288dp"
+            android:background="@color/white" />
     </LinearLayout>
 
     <LinearLayout
@@ -73,10 +80,10 @@
         tools:layout_editor_absoluteY="0dp">
 
         <TextView
-            android:layout_width="150dp"
+            android:layout_width="100dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="40dp"
-            android:layout_marginVertical="390dp"
+            android:layout_marginVertical="325dp"
             android:text="@string/phone"
             android:textColor="@color/white"
             android:textSize="18sp" />
@@ -84,11 +91,47 @@
         <EditText
             android:layout_width="150dp"
             android:layout_height="30dp"
-            android:layout_marginVertical="405dp"
+            android:layout_marginVertical="337dp"
+            android:background="@color/white"
+            android:layout_marginHorizontal="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginVertical="380dp"
+            android:text="@string/password"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="385dp"
             android:background="@color/white" />
 
     </LinearLayout>
 
+
+    <Button
+        android:id="@+id/connexion"
+        android:layout_width="120sp"
+        android:layout_height="45sp"
+        android:layout_marginHorizontal="100dp"
+        android:background="@color/white"
+        android:text="Valider"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="459dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -97,8 +140,8 @@
         android:text="@string/title"
         android:textColor="@color/white"
         android:textSize="60px"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="96dp" />
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="105dp" />
 
 
 

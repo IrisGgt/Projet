@@ -7,20 +7,18 @@
     tools:context="com.example.imac5.liste.MainActivity">
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="215dp"
         android:background="@color/black"
-        >
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
 
         <ImageView
             android:layout_width="351dp"
-            android:layout_height="331dp"
-            android:layout_marginHorizontal="40dp"
+            android:layout_height="235dp"
+            android:layout_marginHorizontal="15dp"
 
             android:src="@drawable/logo"
             tools:layout_editor_absoluteX="42dp"
