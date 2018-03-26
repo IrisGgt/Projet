@@ -6,146 +6,140 @@
     android:layout_height="match_parent"
     tools:context="com.example.imac5.liste.MainActivity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:background="@color/black">
 
-        <TextView
-            android:layout_width="60dp"
-            android:layout_height="30dp"
-            android:layout_marginVertical="195dp"
-            android:text="@string/nom"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:layout_marginHorizontal="40dp"/>
-        <EditText
-            android:id="@+id/name"
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:background="@color/white"
-            android:layout_marginVertical="195dp"
-            android:layout_marginHorizontal="60dp"
+        <include layout="@layout/content_header"/>
 
-            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:orientation="horizontal"
+            android:background="@color/black">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="@string/nom"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:layout_marginHorizontal="60dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="@string/email_1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:layout_marginHorizontal="60dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="@string/birth"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="70dp"
+                android:background="@color/white" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="@string/phone"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:layout_marginVertical="11dp"
+                android:layout_marginHorizontal="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="@string/password"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/valid"
+                android:layout_gravity="center"
+                android:layout_marginVertical="20dp"
+                android:layout_width="120sp"
+                android:layout_height="45sp"
+                android:background="@color/white"
+                android:text="Valider"
+                android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/asterix"
+                android:textColor="@color/white"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                />
+
+        </LinearLayout>
+
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:layout_width="60dp"
-            android:layout_height="30dp"
-            android:layout_marginHorizontal="40dp"
-            android:layout_marginVertical="240dp"
-            android:text="@string/email"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
-
-        <EditText
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:background="@color/white"
-            android:layout_marginVertical="240dp"
-            android:layout_marginHorizontal="60dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:layout_marginHorizontal="40dp"
-            android:layout_marginVertical="283dp"
-            android:text="@string/birth"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
-
-        <EditText
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:layout_marginHorizontal="70dp"
-            android:layout_marginVertical="288dp"
-            android:background="@color/white" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_marginHorizontal="40dp"
-            android:layout_marginVertical="325dp"
-            android:text="@string/phone"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
-
-        <EditText
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:layout_marginVertical="337dp"
-            android:background="@color/white"
-            android:layout_marginHorizontal="20dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_marginHorizontal="40dp"
-            android:layout_marginVertical="380dp"
-            android:text="@string/password"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
-
-        <EditText
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginVertical="385dp"
-            android:background="@color/white" />
-
-    </LinearLayout>
-
-
-    <Button
-        android:id="@+id/connexion"
-        android:layout_width="120sp"
-        android:layout_height="45sp"
-        android:layout_marginHorizontal="100dp"
-        android:background="@color/white"
-        android:text="Valider"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="459dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="200dp"
-        android:text="@string/title"
-        android:textColor="@color/white"
-        android:textSize="60px"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="105dp" />
-
-
-
-
 
 
 </android.support.constraint.ConstraintLayout>

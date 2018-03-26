@@ -10,6 +10,8 @@ public class MainActivity extends AppCompatActivity {
 
     public Button buttonConnect;
     public Button buttonSubscribe;
+    public Button buttonValid;
+    public Button buttonRetour;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,5 +38,23 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, ConnexionActivity.class));
             }
         });
+
+        buttonValid = (Button) findViewById(R.id.valid) ;
+        buttonValid.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, InscriptionActivity.class));
+
+            }
+        });
+
+        buttonRetour = (Button) findViewById(R.id.retour);
+        buttonRetour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ErrorActivity.class));
+            }
+        });
+
+
     }
 }

@@ -9,6 +9,7 @@ public class ConnexionActivity extends AppCompatActivity {
     public Button buttonConnect;
     public Button buttonSubscribe;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -19,6 +19,7 @@
 
         <activity android:name=".InscriptionActivity"/>
         <activity android:name=".ConnexionActivity"/>
+        <activity android:name=".ErrorActivity"/>
     </application>
 
 </manifest>
