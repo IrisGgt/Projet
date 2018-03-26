@@ -12,6 +12,7 @@ public class InscriptionActivity extends AppCompatActivity {
     public Button buttonConnect;
     public Button buttonSubscribe;
     public EditText txtName;
+    public Button buttonValid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,19 +20,61 @@ public class InscriptionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_inscription);
 
         txtName = (EditText) findViewById(R.id.name);
+        txtName = (EditText) findViewById(R.id.email_1);
+        txtName = (EditText) findViewById(R.id.age);
+        txtName = (EditText) findViewById(R.id.tel);
 
-//        buttonSubscribe = (Button) findViewById(R.id.inscription);
-//        buttonSubscribe.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                validateForm();
-//            }
-//        });
+        buttonValid = (Button) findViewById(R.id.valid) ;
+        buttonValid.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                if (validateForm()==1) {
+                    // ici shareobject
+                    startActivity(new Intent(InscriptionActivity.this, InscriptionActivity.class));
+                }else{
+                    startActivity(new Intent(InscriptionActivity.this, ErrorActivity.class));
+                }
+            }
+        });
 
     }
 
-    public void validateForm() {
+    public int validateForm() {
+        int retour = 1;
+
         if (txtName.getText().length()==0) {
-            // faire le truc de quand il a pas saisi
+            retour = 0;
         }
+
+        return retour;
+    }
+
+    public int validateForm() {
+        int retour = 1;
+
+        if (txtName.getText().length()==0) {
+            retour = 0;
+        }
+
+        return retour;
+    }
+
+    public int validateForm() {
+        int retour = 1;
+
+        if (txtName.getText().length()==0) {
+            retour = 0;
+        }
+
+        return retour;
+    }
+
+    public int validateForm() {
+        int retour = 1;
+
+        if (txtName.getText().length()==0) {
+            retour = 0;
+        }
+
+        return retour;
     }
 }

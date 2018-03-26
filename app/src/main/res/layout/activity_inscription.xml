@@ -50,6 +50,7 @@
                 android:textColor="@color/white"
                 android:textSize="18sp" />
             <EditText
+                android:id="@+id/email_1"
                 android:layout_width="150dp"
                 android:layout_height="30dp"
                 android:background="@color/white"
@@ -69,6 +70,7 @@
                 android:textColor="@color/white"
                 android:textSize="18sp" />
             <EditText
+                android:id="@+id/age"
                 android:layout_width="150dp"
                 android:layout_height="30dp"
                 android:layout_marginHorizontal="70dp"
@@ -88,6 +90,7 @@
                 android:textColor="@color/white"
                 android:textSize="18sp" />
             <EditText
+                android:id="@+id/tel"
                 android:layout_width="150dp"
                 android:layout_height="30dp"
                 android:background="@color/white"
