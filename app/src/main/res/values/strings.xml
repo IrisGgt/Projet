@@ -9,7 +9,7 @@
     <string name="password">Mot de passe</string>
     <string name="title2">Connexion</string>
     <string name="asterix">* Champs obligatoires</string>
-    <string name="error">Attention ! vous n'avez pas rempli tous les champs obligatoires. Merci de renseigner les informations manquantes.</string>
+    <string name="error">Attention ! vous n\'avez pas rempli tous les champs obligatoires. Merci de renseigner les informations manquantes.</string>
     <string name="welcome">Bienvenue sur votre esapce VYBZ !</string>
 
 </resources>
