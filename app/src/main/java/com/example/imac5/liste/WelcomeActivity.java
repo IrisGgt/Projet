@@ -23,7 +23,7 @@ public class WelcomeActivity extends AppCompatActivity {
         share = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 
         introduction = (TextView) findViewById(R.id.introduction);
-        introduction.setText("Bienvenue " + share.getString("name","") + " sur votre espace VYBZ");
+        introduction.setText("Bienvenue " + share.getString("name","") + " sur votre espace VYBZ !");
 
         buttonAccess = (Button) findViewById(R.id.access);
         buttonAccess.setOnClickListener(new View.OnClickListener() {

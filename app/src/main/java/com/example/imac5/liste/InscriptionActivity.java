@@ -38,6 +38,8 @@ public class InscriptionActivity extends AppCompatActivity {
                     share.edit()
                             .putString("name",txtName.getText().toString())
                             .putString("email",txtEmail.getText().toString())
+                            .putString("age",txtAge.getText().toString())
+                            .putString("tel",txtTel.getText().toString())
                             .apply();
                     startActivity(new Intent(InscriptionActivity.this, WelcomeActivity.class));
                 }else{
