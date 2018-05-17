@@ -11,5 +11,7 @@
     <string name="asterix">* Champs obligatoires</string>
     <string name="error">Attention ! vous n\'avez pas rempli tous les champs obligatoires. Merci de renseigner les informations manquantes.</string>
     <string name="welcome">Bienvenue sur votre esapce VYBZ !</string>
-
+    <string name="envoyer">envoyer</string>
+    <string name="deconnect">deconnexion</string>
+    <string name="getMessage">getMessage</string>
 </resources>
